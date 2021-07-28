@@ -1,6 +1,6 @@
 import datetime
 
-def create_post(title, text, filename, subtitle=None):
+def create_post(title, subtitle, text, filename):
     input_file = open("./base.html", "rt")
     output_file = open(filename, "wt")
     data = input_file.read()
@@ -8,17 +8,34 @@ def create_post(title, text, filename, subtitle=None):
     if subtitle != None:
         data = data.replace('<!--Subtitle-->', f'<h2 class="subheading">{subtitle}</h2>')
     data = data.replace('<!--Date-->', f'<span class="meta">Posted by <a href="./about.html">Guilherme Miranda Martins</a> on {datetime.date.today()}</span>')
-    data = data.replace('<!--Texte-->', get_html_text(text))
+    data = data.replace('<!--Text-->', text)
     input_file.close()
     output_file.write(data)
     output_file.close()
 
-def get_html_text(text):
-    return "hello text"
+def get_html():
+    with open("content.txt", "r", encoding="utf-8") as content_file:
+        lines = content_file.read().split('\n') 
+        title = lines.pop(0)
+        subtitle = lines.pop(0)
+        filename = lines.pop(0)
+        filename = filename[filename.index(":")+2:] +f"{datetime.date.today()}.html"
+        filename = "../html_pages/" + filename
+        text = ""
+        print(lines)
+        for line in lines:
+            if "big: " in line:
+                text += f"<h2>{line[5:]}</h2>\n"
+            elif "quote: " in line:
+                text += f"<blockquote>{line[7:]}</blockquote>\n"
+            else:
+                text += f"<p>{line}</p>\n"
+    return title, subtitle, text, filename
+        
 
 
-#<h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-#<span class="meta">Posted by <a href="./about.html">Guilherme Miranda Martins</a>""</span>.format(datetime.date())
+#blockquote
 
 
-create_post("titre", "texte", "fichier.html")
+title, subtitle, text, filename = get_html()
+create_post(title, subtitle, text, filename)
