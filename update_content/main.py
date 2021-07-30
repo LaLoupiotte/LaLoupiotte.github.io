@@ -1,7 +1,7 @@
 import datetime
 
 content_html_inject = """
-                <div class="post-preview"><div class="post-preview">
+                <div class="post-preview">
                     <a href="ARTICLE_LINK">
                         <h2 class="post-title">
                             <!--Title-->
@@ -69,11 +69,21 @@ def modify_content(title, filename, subtitle = None):
     output_file.write(data)
     output_file.close()
 
-    
+def modify_index():
+    input_file = open("./index_copy.html", "r", encoding = "utf-8")
+    lines = input_file.read().split('\n')
+    print(lines)
+    print(lines.index("<!--post1-->"))
+    print(lines.index("<!--post2-->"))
+    print(lines.index("<!--post3-->"))
+
+
 #MAIN#
+modify_index()
+"""
 title, subtitle, text, filename = get_html_for_post()
 title = title[7:]
 subtitle = subtitle[10:]
 create_post(title, subtitle, text, filename)
-modify_content(title, filename, subtitle)
+modify_content(title, filename, subtitle)"""
 
