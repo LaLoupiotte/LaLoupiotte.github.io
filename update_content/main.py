@@ -69,21 +69,47 @@ def modify_content(title, filename, subtitle = None):
     output_file.write(data)
     output_file.close()
 
-def modify_index():
+def modify_index(title, filename, subtitle=None):
+    filename = "./html_pages/articles/" + filename
     input_file = open("./index_copy.html", "r", encoding = "utf-8")
     lines = input_file.read().split('\n')
-    print(lines)
-    print(lines.index("<!--post1-->"))
-    print(lines.index("<!--post2-->"))
-    print(lines.index("<!--post3-->"))
-
+    content={"post2": None, "post3": None}
+    for number in range(1, 4):
+        start_index = lines.index("<!--start-->")
+        end_index = lines.index("<!--end-->")
+        if number == 1:
+            content["post2"] = lines[start_index: end_index+1]
+        elif number == 2:
+            content["post3"] = lines[start_index: end_index+1]
+        lines[start_index: end_index+1] = [f"<--post{number}-->"]
+    post1 = content_html_inject
+    post1 = post1.replace("<!--Title-->", title)
+    post1 = post1.replace("ARTICLE_LINK", filename)
+    post1 = post1.replace("DATE_HERE", date_format)
+    post1 = post1.replace("./about.html", "./html_pages/about.html")
+    if subtitle != None:
+        post1 = post1.replace("<!--Subtitle-->", html_subtitle_inject)
+        post1 = post1.replace("<!--Subtitle_text-->", subtitle)
+    input_file.close()
+    output_file = open("../index_bis.html", "wt")
+    output_file.write("\n".join(lines))
+    print("\n".join(lines))
+    print("\n".join(content["post2"]))
+    output_file.close()
+    
+"""
+FIX END ISSUE
+"""
 
 #MAIN#
-modify_index()
-"""
+
+
 title, subtitle, text, filename = get_html_for_post()
 title = title[7:]
 subtitle = subtitle[10:]
+
 create_post(title, subtitle, text, filename)
-modify_content(title, filename, subtitle)"""
+modify_content(title, filename, subtitle)
+
+modify_index(title, filename, subtitle)
 
