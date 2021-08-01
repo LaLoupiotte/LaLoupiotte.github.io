@@ -20,7 +20,7 @@ html_subtitle_inject = """
 date_format = datetime.date.today()
 date_format = date_format.strftime("%b %d, %Y")
 
-def create_post(title, subtitle, text, filename):
+def create_post(title, subtitle, text, filename, img_ref="post-bg.jpg"):
     input_file = open("./post_base.html", "rt")
     filename = "../html_pages/articles/" + filename
     output_file = open(filename, "wt")
@@ -28,9 +28,10 @@ def create_post(title, subtitle, text, filename):
     data = data.replace('<!--Title-->', f'<h1>{title}</h1>')
     if subtitle != None:
         data = data.replace('<!--Subtitle-->', f'<h2 class="subheading">{subtitle}</h2>')
-
     data = data.replace('<!--Date-->', f'<span class="meta">Posted by <a href="../about.html">Guilherme Miranda Martins</a> on {date_format}</span>')
     data = data.replace('<!--Text-->', text)
+    img_url = f"url('../../img/{img_ref}')"
+    data = data.replace("URL_HERE", img_url)
     input_file.close()
     output_file.write(data)
     output_file.close()
@@ -41,6 +42,7 @@ def get_html_for_post():
         title = lines.pop(0)
         subtitle = lines.pop(0)
         filename = lines.pop(0)
+        img_ref = lines.pop(0)
         filename = filename[filename.index(":")+2:] +f"{datetime.date.today()}.html"  
         text = ""
         for line in lines:
@@ -50,7 +52,7 @@ def get_html_for_post():
                 text += f"<blockquote>{line[7:]}</blockquote>\n"
             else:
                 text += f"<p>{line}</p>\n"
-    return title, subtitle, text, filename
+    return title, subtitle, text, filename, img_ref
         
 
 def modify_content(title, filename, subtitle = None):
@@ -73,7 +75,7 @@ def modify_index(title, filename, subtitle=None):
     filename = "./html_pages/articles/" + filename
     input_file = open("./index_copy.html", "r", encoding = "utf-8")
     lines = input_file.read().split('\n')
-    content={"post2": None, "post3": None}
+    content={"post1": None, "post2": None, "post3": None}
     for number in range(1, 4):
         start_index = lines.index("<!--start-->")
         end_index = lines.index("<!--end-->")
@@ -81,8 +83,9 @@ def modify_index(title, filename, subtitle=None):
             content["post2"] = lines[start_index: end_index+1]
         elif number == 2:
             content["post3"] = lines[start_index: end_index+1]
-        lines[start_index: end_index+1] = [f"<--post{number}-->"]
+        lines[start_index: end_index+1] = [f"<!--post{number}-->"]
     post1 = content_html_inject
+    post1 = "<!--start-->" + post1 + "\n<!--end-->"
     post1 = post1.replace("<!--Title-->", title)
     post1 = post1.replace("ARTICLE_LINK", filename)
     post1 = post1.replace("DATE_HERE", date_format)
@@ -91,24 +94,24 @@ def modify_index(title, filename, subtitle=None):
         post1 = post1.replace("<!--Subtitle-->", html_subtitle_inject)
         post1 = post1.replace("<!--Subtitle_text-->", subtitle)
     input_file.close()
+    content["post1"] = [post1]
     output_file = open("../index_bis.html", "wt")
-    output_file.write("\n".join(lines))
-    print("\n".join(lines))
-    print("\n".join(content["post2"]))
+    lines = "\n".join(lines)
+    for key in content.keys():
+        lines = lines.replace(f"<!--{key}-->","\n".join(content[key]))
+    output_file.write(lines)
     output_file.close()
     
-"""
-FIX END ISSUE
-"""
 
 #MAIN#
 
 
-title, subtitle, text, filename = get_html_for_post()
+title, subtitle, text, filename, img_ref = get_html_for_post()
 title = title[7:]
 subtitle = subtitle[10:]
+img_ref = img_ref[5:]
 
-create_post(title, subtitle, text, filename)
+create_post(title, subtitle, text, filename, img_ref)
 modify_content(title, filename, subtitle)
 
 modify_index(title, filename, subtitle)
