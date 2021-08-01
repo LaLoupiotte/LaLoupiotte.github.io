@@ -73,7 +73,7 @@ def modify_content(title, filename, subtitle = None):
 
 def modify_index(title, filename, subtitle=None):
     filename = "./html_pages/articles/" + filename
-    input_file = open("./index_copy.html", "r", encoding = "utf-8")
+    input_file = open("../index.html", "r", encoding = "utf-8")
     lines = input_file.read().split('\n')
     content={"post1": None, "post2": None, "post3": None}
     for number in range(1, 4):
@@ -95,7 +95,7 @@ def modify_index(title, filename, subtitle=None):
         post1 = post1.replace("<!--Subtitle_text-->", subtitle)
     input_file.close()
     content["post1"] = [post1]
-    output_file = open("../index_bis.html", "wt")
+    output_file = open("../index.html", "wt")
     lines = "\n".join(lines)
     for key in content.keys():
         lines = lines.replace(f"<!--{key}-->","\n".join(content[key]))
