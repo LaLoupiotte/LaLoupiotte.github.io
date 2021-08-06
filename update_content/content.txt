@@ -1,9 +1,18 @@
-Title: New Article
-Subtitle: This is the new subtitle
-Filename: file
-Img: content.jpg
-big: something big
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-quote: 'Content here, content here'. 
-Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Title: The reasons why you should start writing. What are the benefits of journaling?
+Subtitle: Are you struggling with overthinking, lack of self-discipline, or even depression? Journaling has helped millions to cope with that. Why not you? 
+Filename: journaling_benefits
+Img: journaling.jpg
+By reading entries made a year ago, I did not expect growth in my relationships with others. Before I overthought everything to fit in, I did not want to be the exception. As for now, I do not care about it. It is interesting to point out that I did not notice the progress until writing about it.
+Writing down your thoughts in a notebook relieves stress and helps you cope with overthinking because it brings mental clarity. 
+quote: "I write because I don't know what I think until I read what I say." Flannery O'Connor 
+When writing about a feeling, you start noticing the path that led to this feeling. You start understanding what makes you feel sad or happy. By knowing the reason that causes an emotion, you are more conscient about what happens in your life. You start noticing that most of the time, the reason why you are anxious is not that important. As a result, when you act against it, you are proud of yourself. Journaling helps to notice the root of anxiety and leads you to take action against it. I went from a passive way of dealing with my emotions to an active one.
+In my experience, journaling helped me being more mindful and clear-minded.
+You may encounter other benefits such as improved health though since I did not experience it myself, I will not write about it.
+big: How do I journal?
+There are various ways of journaling. You can do a bullet journal which is more aesthetic yet. However,  I tend to keep things simple. I write the date, how I feel, and write about anything I want: my projects, feelings, problems. The important thing that you have to keep in mind is that you are not writing to anybody except you.
+There is not a good or a wrong way of journaling, don’t overthink it. Just start writing.
+What I would recommend is having a specific notebook for journaling.
+big: How often?
+I try journaling at least once a week. In reality, I do it on a day-to-day basis, so it became a habit.
+I would recommend just doing it when you feel like it.
+You might not feel clear-minded directly after your first entry though you should feel good about acting toward progress. Journaling can be like a brain workout: the more you do it, the more benefits you will experience. 
