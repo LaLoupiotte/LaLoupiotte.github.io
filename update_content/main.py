@@ -1,6 +1,7 @@
 import datetime
 
 content_html_inject = """
+                <!--Content-->
                 <div class="post-preview">
                     <a href="ARTICLE_LINK">
                         <h2 class="post-title">
@@ -11,7 +12,7 @@ content_html_inject = """
                     <p class="post-meta">Posted by <a href= "./about.html" >Guilherme Miranda Martins</a> on DATE_HERE</p>
                 </div>
                 <hr>
-                <!--Content-->"""
+                """
 html_subtitle_inject = """
                         <h3 class="post-subtitle">
                             <!--Subtitle_text-->
