@@ -1,13 +1,35 @@
-Title: Don't think, just do
-Subtitle: This simple sentence can enhance the way you are approaching a new project or habit.
-Filename: just_do
-Img: justdo.jpg
-quote: Don't think, just do
-quote: Just do it!
-You might have heard these sentences without reflecting on them, without noticing how they can change the way you act when overthinking.
-A Photographer called Liam uses this phrase to entice his community to go out and take photos without thinking about it.
-Just start! You'll figure out later how to respond to encountered problems.
-If you're learning photography like me, don't start by searching what the best camera or lens is the best because none of them is perfect anyway. Take your phone or buy an average camera with a lens suited for almost everything (50mm) and take photos. Bring your camera everywhere take pictures of everything. Try thinking outside of the box. The time spent searching for a good lens isn't as valuable as one hour of street photography.
-Doing this may seem obvious, in reality, a lot of people don't. It's easier to watch videos about the thing you want to do rather than doing it. Our brain tends to do more comfortable things. The thing is that your first photo or youtube video won't be good. I'm a beginner writer, so as a result, my articles suck. The thing is that I don't mind it. I know that if I keep writing, my work will be better. Writing a couple of sentences every day taught me more than watching or reading about other people's content. When you start running, you'll always finish closer to the finish line than before. Even if it's only by 100 meters, you have made progress! And this is what matters. You didn't do it perfectly, nobody does, but you did it. Keep in mind that a lot of people don't even do the 100 meters.
-The next time you are about to start a new project, try switching from a thinking mindset to a doing mindset.
-Remember that the more you do, the better you'll get at doing, and this is true in every domain.
+Title: The improtance of setting goals
+Subtitle: How writing down clear goals can affect your success.
+Filename: goal
+Img: goal.jpg
+big: The reasons why you should set goals:
+Science is clear. If you write down your goals, you are much likely to achieve them.
+A written goal directly gives you motivation. Getting things done on a day-to-day basis will be easier.
+A target allows you to plan for action. If the goal is to run 10K, you may program a week or a month of training ahead.
+With a plan on your desk, you won't have to think about when to run.
+Let's take an example. If you want to be a better runner and don't make a goal, when will you run, and more importantly, why? Signing up for a half-marathon is more likely to lead to creating a habit of running.
+big: Healthy goals, unhealthy goals, learn how to differentiate them.
+First, try not to set ordinary goals like doing your best. You have to be more specific than that. A footballer's objective is to score, not to do his best.
+Like Mark Manson said in The subtle art of not giving a f*ck: objectives have to promote change from the inside and not the outside.
+If your objective is to be a top seller, there are some problems.
+You might achieve your goal, but what if Drake released an album the same day as you. The odds of being a top seller are against you.
+You have to keep in mind that the loser and the winner have the same objective.
+If you want to make a living out of music, the release date of Drake's new album won't matter.
+Moreover, someone can be better than you. If you want to have the world record for the farthest dunk and you're 5'5 (1m66) like me, good luck!
+As I said before, a good objective is to run a marathon.
+It's as simple as it sounds: with enough practice, anyone can run a marathon. You watch 70 years old crossing the finish line! Why couldn't you? When reaching the finish line, you'll feel limitless.
+quote: "Intention without action is an insult to those who expect the best from you." Andy Andrews
+big: Intermediate goals.
+Your alarm goes off. You wake up with a brilliant idea in mind: an app that will change the world.
+Even though you don't know how to code yet, you want to do it.
+Without intermediate goals, you will probably be out of motivation soon because you will find it way too complicated.
+You can make your goal easier to achieve!
+Intermediate goals boost your confidence and are like training wheels before cycling. A child could learn to cycle without training wheels, but it will be much more laborious.
+Before doing your dream app, do simple projects. A to-do app with daily reminders would be great. When you are going to tackle your dream app afterward, you will already have some knowledge.
+big: The paradox behind big goals.
+On the internet, you might have seen some people say to aim for a greater goal to achieve the one you wanted in the first place. However, there is a problem when setting goals this way.
+When I gave my best and didn't obtain the greater goal, I was frustrated the "normal" target didn't matter to me.
+I wanted to run my first 10K ever in less than an hour.
+The thing is that I did it in 1hour and 2 minutes. I didn't even feel happy about having run 10K!
+Now, I plan on training for a half marathon. No timing involved. After doing it, I may have more specific targets. But for now, I focus on crossing the finish line.
+The intermediate goals here are to run a 15K and an 18K before race day.
