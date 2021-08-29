@@ -1,35 +1,33 @@
-Title: The improtance of setting goals
-Subtitle: How writing down clear goals can affect your success.
-Filename: goal
-Img: goal.jpg
-big: The reasons why you should set goals:
-Science is clear. If you write down your goals, you are much likely to achieve them.
-A written goal directly gives you motivation. Getting things done on a day-to-day basis will be easier.
-A target allows you to plan for action. If the goal is to run 10K, you may program a week or a month of training ahead.
-With a plan on your desk, you won't have to think about when to run.
-Let's take an example. If you want to be a better runner and don't make a goal, when will you run, and more importantly, why? Signing up for a half-marathon is more likely to lead to creating a habit of running.
-big: Healthy goals, unhealthy goals, learn how to differentiate them.
-First, try not to set ordinary goals like doing your best. You have to be more specific than that. A footballer's objective is to score, not to do his best.
-Like Mark Manson said in The subtle art of not giving a f*ck: objectives have to promote change from the inside and not the outside.
-If your objective is to be a top seller, there are some problems.
-You might achieve your goal, but what if Drake released an album the same day as you. The odds of being a top seller are against you.
-You have to keep in mind that the loser and the winner have the same objective.
-If you want to make a living out of music, the release date of Drake's new album won't matter.
-Moreover, someone can be better than you. If you want to have the world record for the farthest dunk and you're 5'5 (1m66) like me, good luck!
-As I said before, a good objective is to run a marathon.
-It's as simple as it sounds: with enough practice, anyone can run a marathon. You watch 70 years old crossing the finish line! Why couldn't you? When reaching the finish line, you'll feel limitless.
-quote: "Intention without action is an insult to those who expect the best from you." Andy Andrews
-big: Intermediate goals.
-Your alarm goes off. You wake up with a brilliant idea in mind: an app that will change the world.
-Even though you don't know how to code yet, you want to do it.
-Without intermediate goals, you will probably be out of motivation soon because you will find it way too complicated.
-You can make your goal easier to achieve!
-Intermediate goals boost your confidence and are like training wheels before cycling. A child could learn to cycle without training wheels, but it will be much more laborious.
-Before doing your dream app, do simple projects. A to-do app with daily reminders would be great. When you are going to tackle your dream app afterward, you will already have some knowledge.
-big: The paradox behind big goals.
-On the internet, you might have seen some people say to aim for a greater goal to achieve the one you wanted in the first place. However, there is a problem when setting goals this way.
-When I gave my best and didn't obtain the greater goal, I was frustrated the "normal" target didn't matter to me.
-I wanted to run my first 10K ever in less than an hour.
-The thing is that I did it in 1hour and 2 minutes. I didn't even feel happy about having run 10K!
-Now, I plan on training for a half marathon. No timing involved. After doing it, I may have more specific targets. But for now, I focus on crossing the finish line.
-The intermediate goals here are to run a 15K and an 18K before race day.
+Title: The truth about following your passion.
+Subtitle: The reasons why I didn't pursue my passion for photography.
+Filename: passion
+Img: passion.jpg
+During my last year of high school, I had to chose what career path I wanted.
+Photography directly came to my mind. Taking photos makes me feel good. When the camera is out, the stress and the problems are gone.
+I thought that would be the dream career for me.
+When digging about the subject, problems came up.
+If the best carrier advice you have ever heard was to follow your passion, I have a question for you. What would you do if you didn't have one?
+For those passionate about something, you have to keep in mind the following issues.
+big: Your passions change.
+We all have desires. We want to have this new car, this new phone.
+These desires keep changing, one day, we want something, and the other, we don't. Similarly, our passions change. Look back ten years from now. Were your interests the same? Would you be happy today studying this subject or having a job related to it? Not necessarily.
+In some cases, the passion for something can last a lifetime.
+However, it is still not a valid reason to make a living out of it.
+big: Working for your passion makes it a necessity.
+What is the problem with having to work if you like the work?
+quote: "Follow your passion, and you'll never work a single day in your life." Some motivational Youtube video.
+You have to be careful about adopting this mindset.
+The issue is that when you have to pay the bills. The way you approach your passion changes. "I love to go out and take photos" becomes " I HAVE to go out and take photos."
+The process will not be as enjoyable. Day after day, following your passion will come closer to just working on a random job.
+big: There isn't enough jobs.
+This document speaks for itself. There is only 5% of jobs that involve art, culture, passion, etc. However, more than 90% of students are passionate about those subjects. According to this study, everyone can't successfully follow his passions.
+big: Things you could do instead.
+Giving career advice is not an easy task. Everyone has different interests and skills.
+Answering the following questions may help you find a career that suits your interests.
+What things do you value in a job? Remote working, days off, time to work on your passions, etc.
+What are your skills, and what is your mindset? When you are good at something, the chances are that you like the process. You enjoy doing it. You may not be passionate about it, but you like it enough.
+What activities you did as a child and keep doing now?
+When focusing only on your passion, you adopt a narrow vision. In reality, a lot of jobs are for you.
+big: What about me?
+I like photography, but I believe that it wouldn't be fulfilling in the long run for me. I don't know how it could benefit the world. 
+Furthermore, since I am a kid, I'm interested in technology. I'm not passionate about coding, but I like it. That's why I chose to code instead of taking photos. I know that a job in computer science allows remote working and enough free time to go out and take pictures.
