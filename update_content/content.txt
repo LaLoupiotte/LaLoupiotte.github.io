@@ -1,33 +1,32 @@
-Title: The truth about following your passion.
-Subtitle: The reasons why I didn't pursue my passion for photography.
-Filename: passion
-Img: passion.jpg
-During my last year of high school, I had to chose what career path I wanted.
-Photography directly came to my mind. Taking photos makes me feel good. When the camera is out, the stress and the problems are gone.
-I thought that would be the dream career for me.
-When digging about the subject, problems came up.
-If the best carrier advice you have ever heard was to follow your passion, I have a question for you. What would you do if you didn't have one?
-For those passionate about something, you have to keep in mind the following issues.
-big: Your passions change.
-We all have desires. We want to have this new car, this new phone.
-These desires keep changing, one day, we want something, and the other, we don't. Similarly, our passions change. Look back ten years from now. Were your interests the same? Would you be happy today studying this subject or having a job related to it? Not necessarily.
-In some cases, the passion for something can last a lifetime.
-However, it is still not a valid reason to make a living out of it.
-big: Working for your passion makes it a necessity.
-What is the problem with having to work if you like the work?
-quote: "Follow your passion, and you'll never work a single day in your life." Some motivational Youtube video.
-You have to be careful about adopting this mindset.
-The issue is that when you have to pay the bills. The way you approach your passion changes. "I love to go out and take photos" becomes " I HAVE to go out and take photos."
-The process will not be as enjoyable. Day after day, following your passion will come closer to just working on a random job.
-big: There isn't enough jobs.
-This document speaks for itself. There is only 5% of jobs that involve art, culture, passion, etc. However, more than 90% of students are passionate about those subjects. According to this study, everyone can't successfully follow his passions.
-big: Things you could do instead.
-Giving career advice is not an easy task. Everyone has different interests and skills.
-Answering the following questions may help you find a career that suits your interests.
-What things do you value in a job? Remote working, days off, time to work on your passions, etc.
-What are your skills, and what is your mindset? When you are good at something, the chances are that you like the process. You enjoy doing it. You may not be passionate about it, but you like it enough.
-What activities you did as a child and keep doing now?
-When focusing only on your passion, you adopt a narrow vision. In reality, a lot of jobs are for you.
-big: What about me?
-I like photography, but I believe that it wouldn't be fulfilling in the long run for me. I don't know how it could benefit the world. 
-Furthermore, since I am a kid, I'm interested in technology. I'm not passionate about coding, but I like it. That's why I chose to code instead of taking photos. I know that a job in computer science allows remote working and enough free time to go out and take pictures.
+Title: Simple ways to be more focused
+Subtitle: In a world where there are distractions everywhere, these tips can highly benefit your ability to focus.
+Filename: productivity
+Img: productivity.jpg
+big: Adjust your study space.
+If you are at home, tidying up your workspace every time you leave will reduce your procrastination as well as improve your focus. When something is clean, you won't be distracted by it.
+Adjust the temperature of your room to 22°C (72°F) when possible.
+Being organized directly impacts our performance. Instead of focusing on what we have to do, we focus on doing. 
+You might have noticed a similar path in the anterior tips. You have to avoid fractions. If your brain is distracted, it is hard to be efficient. Inefficiency leads to more time studying, and our ability to focus decreases the more time we spend on a task.
+big: Phones: distractions at their best.
+Our use of social media is very high. We have built the habit of checking them consistently. When nearby, our brain tends to want this quick dopamine hit by scrolling through our feed. This quick-minute distraction affects our focus.
+To prevent this, you have multiple options. The three that worked for me are logging out of your accounts and not saving the password. It can create enough friction for stopping to check them every two minutes. Uninstall the apps on your phone. Use an app like Forest. It's simple to use. The user plants an X-minute tree, and if he goes to another application during this time, the tree dies. It's psychological. You don't want to see a dead tree in your forest.
+big: Plan, set to-dos.
+When you think about doing homework or just something random, build the habit of putting it on a to-do list. Set little things to do like decluttering my laptop or doing math homework. However, don't write your long-term goals there. Furthermore, this method is more effective if you can see your to-dos. If you create this simple habit, you won't need to think about doing it. You'll take a look at your to-do list and do the stuff you need.
+If we don't know what to do, we tend to procrastinate and do nothing. That's why to-do lists are effective.
+big: Give meditation a go.
+Meditation has a lot of benefits. One of them is improved focus. Try free trials of headspace or 7mind to understand the basics. You might not see direct results after one week of meditation. Using Forest combined with daily motivation has skyrocketed my focus. I can guarantee that you will see the benefits too.
+big: Music
+You have to be careful with this tip.
+Listening to a type of music while being focused will create a path in your brain. This music equals focus. However, if you use the same songs for partying and studying, your ability to focus will be damaged when listening to them. Try different things, lofi music is popular. I listen to Fado ( Portuguese music genre).
+Remember that you should listen to it only when studying.
+big: Simple points
+You should aim at sleeping between 7 to 8 hours of sleep every day.
+Have eaten something not to be hungry during study time.
+Have a bottle of water nearby to stay hydrated.
+If possible, disconnect from the Internet.
+big: If you want exercises to improve your concentration, know that they can be fun.
+Board games are proven to be good are improving your ability to focus.
+Exercising doesn't only train your body but also your brain. There is a link between exercising and improved focus.
+big: Be careful.
+Do not try to implement every tip directly into your life. You will be much more likely to drop those habits in a short period.
+I recommend applying these tips but only one at a time,  start with Pomodoro, then after one or two weeks, install Forest, etc.
