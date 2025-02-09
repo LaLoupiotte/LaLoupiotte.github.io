@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232323;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 10vh;
+    max-height: 80px;
+    background-color: #232323;
+    color: white;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    h2{
+        padding: 10px;
+    }
+
+    a{
+        color: white;
+
+    }
+
+    #contact{
+        padding-right: 2vw;
+    }
+
+    nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .contact-link {
+        color: white;
+    }   
+}
+
+#mainPhoto{
+    background-image: url("../../images/home.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Work section grid */
+#work {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #222;
+    padding: 15px;
+}
+
+.gridElement p {
+    font-size: 1rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+.gridElement img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
