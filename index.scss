@@ -68,34 +68,57 @@ header {
     flex-direction: column;
 }
 
-/* Work section grid */
 #work {
     display: grid;
-    grid-template-columns: repeat(6, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    background-color: #444;
+    height: 90vh;
+
+    .gridElement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #222;
+        padding: 10vh 10px;
+
+        p {
+            font-size: 1rem;
+            color: #f0a500;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        &:nth-child(2) {
+           padding-top: 20vh;
+
+           img{
+            padding-top: 50px;
+           }
+        }
+
+        &:nth-child(3) {
+            p{
+             padding-top: 80px;
+            }
+         }
+
+        &:nth-child(4) {
+            padding-top: 20vh;
+            
+        }
+        &:nth-child(5) {
+            padding-top: 40vh;
+        }
+    }
 }
 
-.gridElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #222;
-    padding: 15px;
-}
 
-.gridElement p {
-    font-size: 1rem;
-    color: #f0a500;
-    margin-bottom: 10px;
-}
 
-.gridElement img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
