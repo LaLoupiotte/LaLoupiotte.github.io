@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #232323;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 10vh;
+    max-height: 80px;
+    background-color: #232323;
+    color: white;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    #guilherme{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    a{
+        color: white;
+
+    }
+
+    #contact{
+        padding-right: 2vw;
+    }
+
+    nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .contact-link {
+        color: white;
+    }   
+}
+
+// Variables
+$overlay-opacity: 0.5;
+$hover-overlay-opacity: 0.3;
+$project-size: 20vw;
+$font-size: 1.5vw;
+$text-color: white;
+$gap: 20px;
+$border-radius: 10px;
+
+// General section styling
+#projects {
+  text-align: center;
+  padding: 20px;
+
+  h4 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  // Container for the projects
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap;
+  }
+}
+
+// Individual project styling
+.projectShowcase {
+  position: relative;
+  height: $project-size;
+  width: $project-size;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  // Dark overlay for the background image
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, $overlay-opacity);
+    z-index: 1;
+  }
+
+  // Text styling
+  a {
+    position: relative;
+    z-index: 2;
+    color: $text-color;
+    font-size: $font-size;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+
+  // Hover effect for interactivity
+  &:hover {
+    &::before {
+      background-color: rgba(0, 0, 0, $hover-overlay-opacity);
+    }
+
+    a {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+  }
+}
