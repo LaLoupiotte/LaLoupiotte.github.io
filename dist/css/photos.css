@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10vh;
+  background-color: #232323;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 10vh;
+  max-height: 80px;
+  background-color: #232323;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+header #guilherme {
+  padding: 10px;
+  font-size: 1.3em;
+  color: white;
+}
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 1em;
+}
+header #contact {
+  padding-right: 2vw;
+  color: white;
+}
+
+#projects {
+  text-align: center;
+  padding: 20px;
+}
+#projects h4 {
+  font-size: 1.2rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+#projects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: white;
+}
+#projects > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+#projects > div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projects > div img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+#projects > div .landscape {
+  grid-column: span 2;
+}
+#projects > div .portrait {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    gap: 10px;
+  }
+  #projects > div {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  header #guilherme {
+    margin-bottom: 10px;
+  }
+  header nav {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+  header #contact {
+    padding-right: 0;
+  }
+  #projects > div {
+    grid-template-columns: 1fr;
+  }
+  #projects > div .landscape, #projects > div .portrait {
+    grid-column: span 1;
+  }
+}/*# sourceMappingURL=photos.css.map */

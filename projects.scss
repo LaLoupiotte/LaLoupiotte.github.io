@@ -1,60 +1,61 @@
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body{
-    background-color: #232323;
+  padding-top: 10vh;
+  background-color: #232323;
 }
 
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    height: 10vh;
-    max-height: 80px;
-    background-color: #232323;
-    color: white;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  height: 10vh;
+  max-height: 80px;
+  background-color: #232323;
+  color: white;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 
-    #guilherme{
-        padding: 10px;
-        font-size: 1.3em;
-    }
+  #guilherme{
+      padding: 10px;
+      font-size: 1.3em;
+  }
 
-    a{
-        color: white;
+  a{
+      color: white;
 
-    }
+  }
 
-    #contact{
-        padding-right: 2vw;
-    }
+  #contact{
+      padding-right: 2vw;
+  }
 
-    nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);  
-    }
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-        padding: 10px;
-    }
+  nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);  
+  }
+  ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+  }
 
-    .contact-link {
-        color: white;
-    }   
+  .contact-link {
+      color: white;
+  }   
 }
 
 // Variables
@@ -73,13 +74,13 @@ $border-radius: 10px;
 
   h4 {
     font-size: 1.2rem;
-    color: #555;
+    color: #f0a500;
   }
 
   h2 {
     font-size: 1.8rem;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
   }
 
   // Container for the projects
@@ -101,8 +102,7 @@ $border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  border-radius: $border-radius;
+  overflow: hidden; 
 
   // Dark overlay for the background image
   &::before {
@@ -139,4 +139,8 @@ $border-radius: 10px;
       transition: transform 0.3s ease;
     }
   }
+}
+
+#paris20{
+  background-image: url("../../images/one.jpg");
 }
