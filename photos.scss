@@ -1,161 +1,176 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding-top: 10vh;
-    background-color: #232323;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10vh;
+  background-color: #232323;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 10vh;
+  max-height: 80px;
+  background-color: #232323;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+
+  #guilherme {
+    padding: 10px;
+    font-size: 1.3em;
     color: white;
-    font-family: Arial, sans-serif;
   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    height: 10vh;
-    max-height: 80px;
-    background-color: #232323;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    z-index: 1000;
-  
-    #guilherme {
+
+  nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
       padding: 10px;
-      font-size: 1.3em;
-      color: white;
-    }
-  
-    nav {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-  
-      ul {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-        padding: 10px;
-  
-        li a {
-          color: white;
-          font-size: 1em;
-        }
+
+      li a {
+        color: white;
+        font-size: 1em;
       }
     }
-  
-    #contact {
-      padding-right: 2vw;
-      color: white;
-    }
+  }
+
+  #contact {
+    padding-right: 2vw;
+    color: white;
+  }
+}
+
+// Variables
+$gap: 20px;
+$border-radius: 10px;
+
+// Photos section styling
+#projects {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    font-size: 1.2rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  p{
+    font-size: 1.1rem;
+    padding-bottom: 50px;
+    width: 70vw;
   }
   
-  // Variables
-  $gap: 20px;
-  $border-radius: 10px;
-  
-  // Photos section styling
+  > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); // Flexible column size
+    gap: $gap;
+    grid-auto-flow: dense; // Fill gaps automatically
+    padding: 0 20px;
+
+    img {
+      width: 100%; // Ensure the image takes up the full width of its container
+      height: auto; // Maintain the aspect ratio
+      border-radius: $border-radius;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    // Landscape images span 2 columns
+    .landscape {
+      grid-column: span 2; // Span across 2 columns
+    }
+
+    // Portrait images stay in 1 column
+    .portrait {
+      grid-column: span 1; // Stay in 1 column (default)
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  header {
+    nav ul {
+      gap: 10px;
+    }
+  }
+
   #projects {
-    text-align: center;
-    padding: 20px;
-  
-    h4 {
-      font-size: 1.2rem;
-      color: #f0a500;
+    > div {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); // Smaller columns for tablets
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+
+    #guilherme {
       margin-bottom: 10px;
     }
-  
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 30px;
-      color: white;
+
+    nav {
+      position: static;
+      transform: none;
+      margin-bottom: 10px;
     }
-  
-    // Container for the images
+
+    #contact {
+      padding-right: 0;
+    }
+  }
+
+  #projects {
     > div {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); // Base column size
-      gap: $gap;
-      padding: 0 20px;
-  
-      img {
-        width: 100%; // Ensure the image takes up the full width of its container
-        height: auto; // Maintain the aspect ratio
-        border-radius: $border-radius;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-        &:hover {
-          transform: scale(1.01);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-      }
-  
-      // Landscape images span 2 columns
-      .landscape {
-        grid-column: span 2; // Span across 2 columns
-      }
-  
-      // Portrait images stay in 1 column
-      .portrait {
-        grid-column: span 1; // Stay in 1 column (default)
+      grid-template-columns: 1fr; // Single column for mobile
+
+      // Reset grid-column for mobile
+      .landscape, .portrait {
+        grid-column: span 1; // All images take 1 column on mobile
       }
     }
   }
-  
-  // Responsive adjustments
-  @media (max-width: 768px) {
-    header {
-      nav ul {
-        gap: 10px;
-      }
-    }
-  
-    #projects {
-      > div {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); // Smaller columns for tablets
-      }
-    }
-  }
-  
-  @media (max-width: 480px) {
-    header {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-  
-      #guilherme {
-        margin-bottom: 10px;
-      }
-  
-      nav {
-        position: static;
-        transform: none;
-        margin-bottom: 10px;
-      }
-  
-      #contact {
-        padding-right: 0;
-      }
-    }
-  
-    #projects {
-      > div {
-        grid-template-columns: 1fr; // Single column for mobile
-  
-        // Reset grid-column for mobile
-        .landscape, .portrait {
-          grid-column: span 1; // All images take 1 column on mobile
-        }
-      }
-    }
-  }
+}

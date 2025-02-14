@@ -58,9 +58,17 @@ header #contact {
 #projects {
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #projects h4 {
   font-size: 1.2rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+#projects h3 {
+  font-size: 1.5rem;
   color: #f0a500;
   margin-bottom: 10px;
 }
@@ -69,10 +77,16 @@ header #contact {
   margin-bottom: 30px;
   color: white;
 }
+#projects p {
+  font-size: 1.1rem;
+  padding-bottom: 50px;
+  width: 70vw;
+}
 #projects > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
+  grid-auto-flow: dense;
   padding: 0 20px;
 }
 #projects > div img {
