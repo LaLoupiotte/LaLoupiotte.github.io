@@ -1,72 +1,34 @@
+@use 'base';
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-color: #232323;
+body {
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    height: 10vh;
-    max-height: 80px;
-    background-color: #232323;
-    color: white;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-
-    #guilherme{
-        padding: 10px;
-        font-size: 1.3em;
-    }
-
-    a{
-        color: white;
-
-    }
-
-    #contact{
-        padding-right: 2vw;
-    }
-
-    nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);  
-    }
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .contact-link {
-        color: white;
-    }   
-}
-
-// About Me Page Styling
 #aboutme {
     padding-top: 30vh;
     text-align: center;
+
     h2 {
       font-size: 2.5rem;
       color: #f0a500;
       margin-bottom: 20px;
     }
-  
+
     p {
       font-size: 1.2rem;
       line-height: 1.6;
@@ -74,29 +36,66 @@ header {
       margin: 0 auto 30px;
       color: white;
     }
-  
+
     .social-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       max-width: 600px;
       margin: 0 auto;
-  
+
       a {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1rem;
         background-color: #333;
-
         color: white;
         font-weight: bold;
         transition: background-color 0.3s ease, transform 0.3s ease;
-  
+
         &:hover {
           background-color: #444;
           transform: scale(1.01);
         }
       }
     }
-  }
-  
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    #aboutme {
+        padding-top: 20vh;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 90%;
+        }
+
+        .social-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            max-width: 90%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #aboutme {
+        padding-top: 15vh;
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        .social-grid {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
+}

@@ -1,3 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  font-family: "Raleway", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the Guilherme and Menu Button */
+  height: 10vh;
+  max-height: 70px;
+  padding: 0 20px;
+  background-color: #232323;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header #guilherme {
+  width: 400px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  text-align: center;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header #menu-button {
+  width: 400px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+header .nav-active {
+  transform: translateX(0);
+}
+@media (max-width: 1400px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -13,45 +81,6 @@ a {
   color: black;
 }
 
-header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  height: 10vh;
-  max-height: 80px;
-  background-color: #232323;
-  color: white;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-header #guilherme {
-  padding: 10px;
-  font-size: 1.3em;
-}
-header a {
-  color: white;
-}
-header #contact {
-  padding-right: 2vw;
-}
-header nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-header ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-}
-header .contact-link {
-  color: white;
-}
-
 #mainPhoto {
   background-image: url("../../images/home.jpg");
   width: 100vw;
@@ -59,8 +88,16 @@ header .contact-link {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  background-position: center;
+}
+#mainPhoto h1 {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #work {
@@ -81,7 +118,8 @@ header .contact-link {
   padding: 10vh 0px;
 }
 #work .gridElement p {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  padding: 0 20px;
   color: #f0a500;
 }
 #work .gridElement img {
@@ -110,30 +148,33 @@ header .contact-link {
 }
 
 #projects {
-  min-height: 90vh;
-  padding-top: 15vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 #projects h4 {
+  font-size: 2rem;
   color: #f0a500;
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 #projects h2 {
-  padding-top: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   color: white;
-  padding-bottom: 100px;
 }
 #projects > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 #projects .projectShowcase {
   position: relative;
   height: 20vw;
   width: 20vw;
+  min-height: 400px;
+  min-width: 400px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -155,27 +196,82 @@ header .contact-link {
   position: relative;
   z-index: 2;
   color: white;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
   padding: 10px;
+  font-family: "Titillium Web", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 #projects .projectShowcase:hover::before {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #projects .projectShowcase:hover a {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
-#projects #paris20 {
-  background-image: url("../../images/home.jpg");
-  background-size: cover;
+
+#paris20 {
+  background-image: url("../../images/one.jpg");
 }
-#projects #portoFilm {
+
+#portoFilm {
   background-image: url("../../images/projects/portoOnFilm/IMG_0062.JPEG");
-  background-size: cover;
 }
-#projects #blackAndWhite {
-  background-image: url("../../images/home.jpg");
-  background-size: cover;
+
+@media (max-width: 1024px) {
+  #mainPhoto {
+    height: 80vh;
+  }
+  #mainPhoto h1 {
+    height: 40vh;
+  }
+  #work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    background: none;
+    border: solid 1px grey;
+    padding: 10px;
+  }
+  #work .gridElement:first-child,
+  #work .gridElement:last-child {
+    display: none;
+  }
+  #work .gridElement {
+    width: 100%;
+    background-color: #222;
+    padding: 0;
+  }
+  #work .gridElement * {
+    margin: 0;
+    padding: 0;
+  }
+  #work .gridElement:nth-child(2) {
+    padding-top: 0;
+  }
+  #work .gridElement:nth-child(2) p {
+    padding: 40px 0px;
+  }
+  #work .gridElement:nth-child(2) img {
+    padding-top: 0;
+  }
+  #work .gridElement:nth-child(3) {
+    padding-top: 0;
+  }
+  #work .gridElement:nth-child(4) {
+    padding-top: 0;
+  }
+  #work .gridElement:nth-child(4) p {
+    padding: 40px 0px;
+  }
+  #work .gridElement:nth-child(5) {
+    padding-top: 0;
+  }
+  #work .gridElement:last-child {
+    border-bottom: none;
+  }
 }/*# sourceMappingURL=index.css.map */

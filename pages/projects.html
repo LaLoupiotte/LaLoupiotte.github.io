@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/projects.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("menu-button").addEventListener("click", function () {
+                document.getElementById("nav-menu").classList.toggle("nav-active");
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -15,7 +22,7 @@
                 <li><a href="./aboutme.html">About me</a></li>
             </ul>
         </nav>
-        <a id = "contact" href="contact">Contact</a>
+        <button id="menu-button">☰</button>
     </header>
     <section id="projects">
         <h4>Projects</h4>
@@ -25,9 +32,12 @@
                 <a href="#">20 Paris</a>
             </div>
             <div class="projectShowcase" id="portoFilm">
-                <a href="./projects/portoOnFilm.html">Porto on Film</a>
+                <a href="./projects/portoOnFilm.html<">Porto on Film</a>
             </div>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2025 Guilherme Martins. All rights reserved.</p>
+    </footer>
 </body>
 </html>

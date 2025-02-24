@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  font-family: "Raleway", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the Guilherme and Menu Button */
+  height: 10vh;
+  max-height: 70px;
+  padding: 0 20px;
+  background-color: #232323;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header #guilherme {
+  width: 400px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  flex: 1; /* This takes up remaining space between the elements */
+  display: flex;
+  justify-content: center; /* Centers the nav items horizontally */
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  text-align: center;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header #menu-button {
+  width: 400px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+header .nav-active {
+  transform: translateX(0);
+}
+@media (max-width: 768px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,50 +72,16 @@
 
 body {
   background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  height: 10vh;
-  max-height: 80px;
-  background-color: #232323;
-  color: white;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-header #guilherme {
-  padding: 10px;
-  font-size: 1.3em;
-}
-header a {
-  color: white;
-}
-header #contact {
-  padding-right: 2vw;
-}
-header nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-header ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-}
-header .contact-link {
-  color: white;
 }
 
 #aboutme {
@@ -86,4 +119,35 @@ header .contact-link {
 #aboutme .social-grid a:hover {
   background-color: #444;
   transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  #aboutme {
+    padding-top: 20vh;
+  }
+  #aboutme h2 {
+    font-size: 2rem;
+  }
+  #aboutme p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  #aboutme .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  #aboutme {
+    padding-top: 15vh;
+  }
+  #aboutme h2 {
+    font-size: 1.75rem;
+  }
+  #aboutme p {
+    font-size: 0.9rem;
+  }
+  #aboutme .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }/*# sourceMappingURL=aboutme.css.map */

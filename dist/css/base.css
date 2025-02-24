@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  font-family: "Raleway", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the Guilherme and Menu Button */
+  height: 10vh;
+  max-height: 70px;
+  padding: 0 20px;
+  background-color: #232323;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header #guilherme {
+  width: 400px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  text-align: center;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header #menu-button {
+  width: 400px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+header .nav-active {
+  transform: translateX(0);
+}
+@media (max-width: 1400px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+}/*# sourceMappingURL=base.css.map */

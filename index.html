@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/index.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("menu-button").addEventListener("click", function () {
+                document.getElementById("nav-menu").classList.toggle("nav-active");
+            });
+        });
+    </script>
     <title>Guilherme Martins</title>
 </head>
 <body>
     <header>
         <a href="#" id="guilherme">Guilherme Martins</a>
-        <nav>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="./pages/projects.html">Projects</a></li>
                 <li><a href="./pages/photos.html">Photos</a></li>
                 <li><a href="./pages/aboutme.html">About me</a></li>
             </ul>
         </nav>
-        <a id = "contact" href="contact">Contact</a>
-    </header>
+        <button id="menu-button">☰</button>
+    </header>    
     <section id="mainPhoto">
-        <h1>Framing the World Through a Lens, Building It with Code.</h1>
+        <h1>Paris street photographer </h1>
     </section>
     <section id="work">
         <div class="emptySpace gridElement"></div>
@@ -32,7 +39,7 @@
         </div>
         <div class="gridElement">            
             <img src="./images/three.jpg" alt="Third image">
-            <p>Building functional and user-friendly websites that bring ideas to life and connect people online.</p>
+            <p>Building functional and user-friendly websites that bring ideas to life.</p>
         </div>
         <div class="gridElement">
             <img src="./images/four.jpg" alt="Fourth image">
@@ -41,7 +48,7 @@
     </section>
     <section id="projects">
         <h4>Projects</h4>
-        <h2>Discover my photography projects below, where I document moments and narratives through the lens.</h2>
+        <h2>Discover my photography projects below.</h2>
         <div>
             <div class="projectShowcase" id="paris20">
                 <a href="#">20 Paris</a>
@@ -51,5 +58,9 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2025 Guilherme Martins. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

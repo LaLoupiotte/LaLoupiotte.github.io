@@ -1,3 +1,5 @@
+@use 'base';
+
 * {
   margin: 0;
   padding: 0;
@@ -16,49 +18,6 @@ a {
   color: inherit;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  height: 10vh;
-  max-height: 80px;
-  background-color: #232323;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  z-index: 1000;
-
-  #guilherme {
-    padding: 10px;
-    font-size: 1.3em;
-    color: white;
-  }
-
-  nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    ul {
-      list-style-type: none;
-      display: flex;
-      gap: 20px;
-      padding: 10px;
-
-      li a {
-        color: white;
-        font-size: 1em;
-      }
-    }
-  }
-
-  #contact {
-    padding-right: 2vw;
-    color: white;
-  }
-}
 
 // Variables
 $gap: 20px;
@@ -108,11 +67,6 @@ $border-radius: 10px;
       height: auto; // Maintain the aspect ratio
       border-radius: $border-radius;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      }
     }
 
     // Landscape images span 2 columns
