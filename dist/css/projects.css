@@ -27,7 +27,7 @@ header #guilherme {
   text-decoration: none;
 }
 header nav {
-  flex: 1; /* This takes up remaining space between the elements */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ header #menu-button {
 header .nav-active {
   transform: translateX(0);
 }
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   header nav {
     position: fixed;
     top: 0;

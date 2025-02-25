@@ -5,24 +5,21 @@
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between the Guilherme and Menu Button */
-    height: 10vh;
-    max-height: 70px;
-    padding: 0 20px;
-    background-color: #232323;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 10vh;
+    max-height: 120px;
+    padding: 0 60px;
+    width: 100vw;
 
     #guilherme {
         width: 400px;
         font-size: 1.5rem;
+        font-weight: 600;
         color: white;
         text-decoration: none;
     }
@@ -30,15 +27,16 @@ header {
     nav {
         flex: 1; 
         display: flex;
-        justify-content: center;  
+        justify-content: flex-end;  
         align-items: center;
     }
 
     ul {
         display: flex;
-        gap: 30px;
+        gap: 50px;
         list-style: none;
         text-align: center;
+        align-items: center;
 
         li a {
             color: white;
@@ -47,30 +45,44 @@ header {
         }
     }
 
-    // Menu button (for mobile)
-    #menu-button {
-        width: 400px;
-        padding-right: 10px;
-        display: flex;
-        justify-content: end;
-        background: none;
+    #menu-button{
+        display: none;
+        background-color: none;
         border: none;
         color: white;
-        font-size: 2rem;
-        cursor: pointer;
+        width: 60px;
     }
 
-    // Mobile styles for the nav when the button is clicked
-    .nav-active {
-        transform: translateX(0);
-    }
+    @media screen and (max-width: 910px) {
+        header{
+            background-color: #232323;
+        }
+        
+        
 
-    // Mobile responsive styling
-    @media (max-width: 1400px) {
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-          
-        }}}
+        nav {   
+            ul{
+                width: 100vw;
+                height: 100vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: #232323;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                
+                display: flex;
+                flex-direction: column;
+                
+                
+                li{
+                    color: white;
+                }
+            }
+        }
+        #menu-button{
+            display: block;
+        }
+        
+    }
+}
