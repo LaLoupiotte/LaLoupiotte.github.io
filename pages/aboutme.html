@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/aboutme.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("menu-button").addEventListener("click", function () {
-                document.getElementById("nav-menu").classList.toggle("nav-active");
-            });
-        });
-    </script>
+    <script src="../dist/js/toggleMenu.js"></script>
+    <script src="../dist/js/headerScroll.js"></script>
+    <script src="../dist/js/mouseGlow.js"></script>
 </head>
 <body>
-    <header>
+    <div id="glow"></div>
+    <header class="closed">
         <a href="../index.html" id="guilherme">Guilherme Martins</a>
-        <nav>
+        <nav id="nav-menu" class="menu-closed">
             <ul>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./photos.html">Photos</a></li>
                 <li><a href="./aboutme.html">About me</a></li>
             </ul>
         </nav>
-        <button id="menu-button">☰</button>
+        <img src="../images/burger_white.png"  id="menu-button" alt="menu hamburger">
     </header>
     <section id="aboutme">
         <h2>About Me</h2>

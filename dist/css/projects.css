@@ -1,19 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 * {
   font-family: "Raleway", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-header {
+.closed {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 10vh;
   max-height: 120px;
   padding: 0 60px;
   width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  transition: background-color 0.3s ease;
 }
 header #guilherme {
   width: 400px;
@@ -23,7 +31,6 @@ header #guilherme {
   text-decoration: none;
 }
 header nav {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,32 +54,69 @@ header #menu-button {
   color: white;
   width: 60px;
 }
+
+.transparent {
+  background-color: none;
+}
+
+.scrolled {
+  background-color: #232323;
+}
+
+footer {
+  height: 200px;
+  z-index: 2;
+  width: 100vw;
+  color: white;
+}
+footer p {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 910px) {
-  header header {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .open-header {
+    padding: 5vh 0px;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
     background-color: #232323;
   }
-  header nav ul {
-    width: 100vw;
-    height: 100vh;
-    width: 100vw;
-    height: 100vh;
-    background-color: #232323;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+  .open-header #guilherme {
+    text-align: center;
+  }
+  header .menu-closed ul {
+    display: none;
+  }
+  header .menu-open ul {
     display: flex;
     flex-direction: column;
-  }
-  header nav ul li {
-    color: white;
   }
   header #menu-button {
     display: block;
   }
 }
+#glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #f0a500;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px #f0a500, 0 0 50px 20px rgba(240, 165, 0, 0.7), 0 0 100px 40px rgba(240, 165, 0, 0.3);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  filter: blur(10px);
+  z-index: -100;
+}
 
 body {
-  padding-top: 10vh;
   background-color: #232323;
   display: flex;
   align-items: center;
@@ -87,17 +131,20 @@ a {
 }
 
 #projects {
+  padding-top: 10vh;
   text-align: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#projects h4 {
+#projects h2 {
   font-size: 2rem;
   font-family: "Titillium Web", serif;
   font-weight: 700;
   font-style: normal;
   color: #f0a500;
 }
-#projects h2 {
+#projects h4 {
   font-size: 1.5rem;
   margin-bottom: 30px;
   color: white;
@@ -110,8 +157,8 @@ a {
 }
 #projects .projectShowcase {
   position: relative;
-  height: 20vw;
-  width: 20vw;
+  height: 400px;
+  width: 400px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -127,19 +174,16 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 #projects .projectShowcase a {
   position: relative;
-  z-index: 2;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2.5rem;
   text-decoration: none;
-  font-weight: bold;
   text-align: center;
   padding: 10px;
   font-family: "Titillium Web", serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
 #projects .projectShowcase:hover::before {
@@ -151,9 +195,17 @@ a {
 }
 
 #paris20 {
-  background-image: url("../../images/one.jpg");
+  background-image: url("../../images/projects/firstBandW/000020900008.jpg");
 }
 
 #portoFilm {
   background-image: url("../../images/projects/portoOnFilm/IMG_0062.JPEG");
+}
+
+@media (max-width: 1024px) {
+  #projects h2 {
+    max-width: 90vw;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
 }/*# sourceMappingURL=projects.css.map */

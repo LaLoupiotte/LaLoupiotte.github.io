@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/projects.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("menu-button").addEventListener("click", function () {
-                document.getElementById("nav-menu").classList.toggle("nav-active");
-            });
-        });
-    </script>
+    <script src="../dist/js/toggleMenu.js"></script>
+    <script src="../dist/js/headerScroll.js"></script>
+    <script src="../dist/js/mouseGlow.js"></script>
 </head>
 <body>
-    <header>
+    <div id="glow"></div>
+    <header class="closed">
         <a href="../index.html" id="guilherme">Guilherme Martins</a>
-        <nav>
+        <nav id="nav-menu" class="menu-closed">
             <ul>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./photos.html">Photos</a></li>
                 <li><a href="./aboutme.html">About me</a></li>
             </ul>
         </nav>
-        <button id="menu-button">☰</button>
+        <img src="../images/burger_white.png"  id="menu-button" alt="menu hamburger">
     </header>
     <section id="projects">
-        <h4>Projects</h4>
-        <h2>Discover my photography projects below, where I document moments and narratives through the lens.</h2>
+        <h2>Projects</h2>
+        <h4>Discover my photography projects below, where I document moments and narratives through the lens.</h4>
         <div>
             <div class="projectShowcase" id="paris20">
-                <a href="#">20 Paris</a>
+                <a href="./projects/firstBaW.html">First B&W</a>
             </div>
             <div class="projectShowcase" id="portoFilm">
-                <a href="./projects/portoOnFilm.html<">Porto on Film</a>
+                <a href="./projects/portoOnFilm.html">Porto on Film</a>
             </div>
         </div>
     </section>

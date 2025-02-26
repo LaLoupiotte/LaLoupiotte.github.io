@@ -22,7 +22,8 @@
 header {
     display: flex;
     align-items: center;
-
+    z-index: 999;
+    transition: background-color 0.3s ease;
     
     
     #guilherme {
@@ -60,12 +61,32 @@ header {
         color: white;
         width: 60px;
     }
+}
 
-    
+.transparent{
+    background-color: none;
+}
+
+.scrolled{
+    background-color: #232323;
+}
+
+footer{
+    height: 200px;
+    z-index: 2;
+    width: 100vw;
+    color: white;
+    p{
+        padding-top: 100px;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 910px) {
-    
+    .no-scroll{
+        overflow: hidden;
+    }
+
     .open-header{
         padding: 5vh 0px;
         position: fixed;

@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/css/photos.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("menu-button").addEventListener("click", function () {
-                document.getElementById("nav-menu").classList.toggle("nav-active");
-            });
-        });
-    </script>
+    <script src="../../dist/js/toggleMenu.js"></script>
+    <script src="../../dist/js/headerScroll.js"></script>
 </head>
 <body>
-    <header>
+    <header class="closed">
         <a href="../../index.html" id="guilherme">Guilherme Martins</a>
-        <nav>
+        <nav id="nav-menu" class="menu-closed">
             <ul>
                 <li><a href="../projects.html">Projects</a></li>
                 <li><a href="../photos.html">Photos</a></li>
                 <li><a href="../aboutme.html">About me</a></li>
             </ul>
         </nav>
-        <button id="menu-button">☰</button>
+        <img src="../../images/burger_white.png"  id="menu-button" alt="menu hamburger">
     </header>
     <section id="projects">
-        <h3>Porto on Film</h3>
+        <h2>Porto on Film</h2>
         <p>"Porto on Film" is a project where I set out to capture the essence of Porto using a single roll of film, with no edits or digital corrections. The challenge was to compose each shot carefully, embracing the unpredictability of film photography. Every frame represents a raw and authentic moment, highlighting the city’s unique light, textures, and atmosphere.</p>
+        <p>Shot on Kodak Colorplus 200</p>
         <div>
             <img src="../../images/projects/portoOnFilm/IMG_0045.JPEG" class="portrait"alt="">
             <img src="../../images/projects/portoOnFilm/IMG_0046.JPEG" class="portrait"alt="">

@@ -1,0 +1,13 @@
+#glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #f0a500;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px #f0a500, 0 0 50px 20px rgba(240, 165, 0, 0.7), 0 0 100px 40px rgba(240, 165, 0, 0.3);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  filter: blur(10px);
+  z-index: -100;
+}/*# sourceMappingURL=glow.css.map */

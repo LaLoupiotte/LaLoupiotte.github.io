@@ -1,19 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 * {
   font-family: "Raleway", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-header {
+.closed {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 10vh;
   max-height: 120px;
   padding: 0 60px;
   width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  transition: background-color 0.3s ease;
 }
 header #guilherme {
   width: 400px;
@@ -23,7 +31,6 @@ header #guilherme {
   text-decoration: none;
 }
 header nav {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,30 +54,54 @@ header #menu-button {
   color: white;
   width: 60px;
 }
+
+.transparent {
+  background-color: none;
+}
+
+.scrolled {
+  background-color: #232323;
+}
+
+footer {
+  height: 200px;
+  z-index: 2;
+  width: 100vw;
+  color: white;
+}
+footer p {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 910px) {
-  header header {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .open-header {
+    padding: 5vh 0px;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
     background-color: #232323;
   }
-  header nav ul {
-    width: 100vw;
-    height: 100vh;
-    width: 100vw;
-    height: 100vh;
-    background-color: #232323;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+  .open-header #guilherme {
+    text-align: center;
+  }
+  header .menu-closed ul {
+    display: none;
+  }
+  header .menu-open ul {
     display: flex;
     flex-direction: column;
-  }
-  header nav ul li {
-    color: white;
   }
   header #menu-button {
     display: block;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +109,6 @@ header #menu-button {
 }
 
 body {
-  padding-top: 10vh;
   background-color: #232323;
   color: white;
   font-family: Arial, sans-serif;
@@ -90,15 +120,17 @@ a {
 }
 
 #projects {
+  padding-top: 10vh;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#projects h4 {
-  font-size: 1.2rem;
+#projects h2 {
+  font-size: 2rem;
+  font-family: "Titillium Web", serif;
   color: #f0a500;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 #projects h3 {
@@ -106,7 +138,7 @@ a {
   color: #f0a500;
   margin-bottom: 10px;
 }
-#projects h2 {
+#projects h4 {
   font-size: 1.8rem;
   margin-bottom: 30px;
   color: white;
@@ -136,35 +168,13 @@ a {
   grid-column: span 1;
 }
 
-@media (max-width: 768px) {
-  header nav ul {
-    gap: 10px;
+@media (max-width: 1024px) {
+  #projects h2 {
+    max-width: 90vw;
+    font-size: 0.9rem;
+    font-weight: 300;
   }
   #projects > div {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-  header #guilherme {
-    margin-bottom: 10px;
-  }
-  header nav {
-    position: static;
-    transform: none;
-    margin-bottom: 10px;
-  }
-  header #contact {
-    padding-right: 0;
-  }
-  #projects > div {
-    grid-template-columns: 1fr;
-  }
-  #projects > div .landscape, #projects > div .portrait {
-    grid-column: span 1;
+    display: block;
   }
 }/*# sourceMappingURL=photos.css.map */
