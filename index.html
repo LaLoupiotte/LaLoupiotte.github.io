@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/index.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("menu-button").addEventListener("click", function () {
-                document.getElementById("nav-menu").classList.toggle("nav-active");
-            });
-        });
-    </script>
+    <script src="./dist/js/toggleMenu.js"></script>
     <title>Guilherme Martins</title>
 </head>
 <body>
-    <header>
+    <header class="closed">
         <a href="#" id="guilherme">Guilherme Martins</a>
-        <nav id="nav-menu">
+        <nav id="nav-menu" class="menu-closed">
             <ul>
                 <li><a href="./pages/projects.html">Projects</a></li>
                 <li><a href="./pages/photos.html">Photos</a></li>

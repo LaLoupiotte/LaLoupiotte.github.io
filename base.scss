@@ -2,20 +2,29 @@
 
 *{
     font-family: "Raleway", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-header {
+
+.closed{
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
     justify-content: space-between; 
     height: 10vh;
     max-height: 120px;
     padding: 0 60px;
     width: 100vw;
+}
 
+header {
+    display: flex;
+    align-items: center;
+
+    
+    
     #guilherme {
         width: 400px;
         font-size: 1.5rem;
@@ -25,7 +34,6 @@ header {
     }
 
     nav {
-        flex: 1; 
         display: flex;
         justify-content: flex-end;  
         align-items: center;
@@ -53,36 +61,43 @@ header {
         width: 60px;
     }
 
-    @media screen and (max-width: 910px) {
-        header{
-            background-color: #232323;
+    
+}
+
+@media screen and (max-width: 910px) {
+    
+    .open-header{
+        padding: 5vh 0px;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #232323;
+        #guilherme{
+            text-align: center;
+        }
+    }
+
+    header{
+        
+        .menu-closed{
+            ul{
+                display: none;
+            }
         }
         
-        
-
-        nav {   
+        .menu-open{
             ul{
-                width: 100vw;
-                height: 100vh;
-                width: 100vw;
-                height: 100vh;
-                background-color: #232323;
-                position: fixed;
-                top: 0px;
-                left: 0px;
                 
                 display: flex;
                 flex-direction: column;
-                
-                
-                li{
-                    color: white;
-                }
             }
         }
+
         #menu-button{
             display: block;
         }
-        
     }
 }

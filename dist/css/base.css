@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 * {
   font-family: "Raleway", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-header {
+.closed {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 10vh;
   max-height: 120px;
   padding: 0 60px;
   width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
 }
 header #guilherme {
   width: 400px;
@@ -23,7 +29,6 @@ header #guilherme {
   text-decoration: none;
 }
 header nav {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,24 +52,27 @@ header #menu-button {
   color: white;
   width: 60px;
 }
+
 @media screen and (max-width: 910px) {
-  header header {
+  .open-header {
+    padding: 5vh 0px;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
     background-color: #232323;
   }
-  header nav ul {
-    width: 100vw;
-    height: 100vh;
-    width: 100vw;
-    height: 100vh;
-    background-color: #232323;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+  .open-header #guilherme {
+    text-align: center;
+  }
+  header .menu-closed ul {
+    display: none;
+  }
+  header .menu-open ul {
     display: flex;
     flex-direction: column;
-  }
-  header nav ul li {
-    color: white;
   }
   header #menu-button {
     display: block;
