@@ -11,7 +11,7 @@ a {
 }
 
 #mainPhoto {
-    background-image: url("../../images/home.jpg");
+    background-image: url("../../images/homePC.png");
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -181,7 +181,8 @@ $border-radius: 10px;
 
 @media (max-width: 1024px) {
     #mainPhoto{
-        height: 80vh;
+        background-image: url("../../images/homePhone.png");
+        height: 100vh;
         h1{
             height: 40vh;
         }
@@ -192,14 +193,12 @@ $border-radius: 10px;
         flex-direction: column;
         align-items: center;
         min-height: auto;
-        background: none;
-        border: solid 1px grey;
+        background-color: transparent;
         padding: 10px;
-
-        .gridElement:first-child,
         .gridElement:last-child {
             display: none;
         }
+       
 
         .gridElement {
             width: 100%;
@@ -211,13 +210,12 @@ $border-radius: 10px;
                 padding: 0;
             }
 
+
             &:nth-child(2) {
-                padding-top: 0;
-                p{
-                    padding: 40px 0px;
-                }
+                padding-top: 100px;
+
                 img {
-                    padding-top: 0;
+                    padding-top: 70px;
                 }
             }
     
@@ -226,10 +224,10 @@ $border-radius: 10px;
             }
     
             &:nth-child(4) {
-                padding-top: 0;
+                padding-top: 0px;
     
                 p {
-                    padding: 40px 0px;
+                    padding: 100px 0px 70px 0px;
                 }
             }
     
