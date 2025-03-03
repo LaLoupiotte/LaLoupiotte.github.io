@@ -101,6 +101,7 @@ footer p {
   }
   header #menu-button {
     display: block;
+    padding-bottom: 10vh;
   }
 }
 #glow {
@@ -117,6 +118,11 @@ footer p {
   z-index: -100;
 }
 
+@media screen and (max-width: 910px) {
+  #glow {
+    display: none;
+  }
+}
 body {
   background-color: #232323;
   display: flex;

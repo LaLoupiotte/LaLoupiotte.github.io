@@ -14,3 +14,9 @@
     filter: blur(10px); 
     z-index: -100;
 }
+
+@media screen and (max-width: 910px) {
+    #glow{
+        display: none;
+    }
+}

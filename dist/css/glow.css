@@ -10,4 +10,10 @@
   transition: transform 0.1s ease-out;
   filter: blur(10px);
   z-index: -100;
+}
+
+@media screen and (max-width: 910px) {
+  #glow {
+    display: none;
+  }
 }/*# sourceMappingURL=glow.css.map */
