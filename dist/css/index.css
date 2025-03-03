@@ -75,6 +75,10 @@ footer p {
   padding-left: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 910px) {
   .no-scroll {
     overflow: hidden;
