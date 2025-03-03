@@ -92,6 +92,9 @@ footer p {
   .open-header #guilherme {
     text-align: center;
   }
+  .open-header #menu-button {
+    padding-bottom: 10vh;
+  }
   header .menu-closed ul {
     display: none;
   }
@@ -101,6 +104,5 @@ footer p {
   }
   header #menu-button {
     display: block;
-    padding-bottom: 10vh;
   }
 }/*# sourceMappingURL=base.css.map */

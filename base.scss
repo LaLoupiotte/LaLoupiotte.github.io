@@ -100,6 +100,9 @@ footer{
         #guilherme{
             text-align: center;
         }
+        #menu-button{
+            padding-bottom: 10vh;
+        }
     }
 
     header{
@@ -116,11 +119,11 @@ footer{
                 display: flex;
                 flex-direction: column;
             }
+            
         }
 
         #menu-button{
             display: block;
-            padding-bottom: 10vh;
         }
     }
 }
