@@ -93,21 +93,14 @@ $text-color: white;
 $gap: 40px;
 $border-radius: 10px;
 
-#projects {
+#CTA {
     text-align: center;
-    padding: 20px;
-
-    h4 {
-        font-size: 2rem;
-        color: #f0a500;
-        font-family: "Titillium Web", serif;
-        font-weight: 700;
-        font-style: normal;
-    }
 
     h2 {
+        padding: 80px 0 20px 0;
         font-size: 1.2rem;
         margin-bottom: 30px;
+        font-weight: 500;
         color: white;
     }
 
@@ -118,7 +111,7 @@ $border-radius: 10px;
         gap: $gap;
     }
 
-    .projectShowcase {
+    .showcase {
         position: relative;
         height: $project-size;
         width: $project-size;
@@ -152,7 +145,7 @@ $border-radius: 10px;
             text-align: center;
             padding: 10px;
             font-family: "Titillium Web", serif;
-            font-weight: 700;
+            font-weight: 600;
             font-style: normal;
         }
 
@@ -170,14 +163,13 @@ $border-radius: 10px;
     }
 }
 
-#firstBaW {
-    background-image: url("../../images/projects/firstBandW/000020900008.jpg");
+#projectBG {
+    background-image: url("../../images/bestOnes/MG_3707.jpg");
 }
 
-#portoFilm {
-    background-image: url("../../images/projects/portoOnFilm/IMG_0062.JPEG");
+#galleryBG{
+    background-image: url("../../images/bestOnes/MG_3716.jpg");
 }
-
 
 @media (max-width: 1024px) {
     #mainPhoto{
